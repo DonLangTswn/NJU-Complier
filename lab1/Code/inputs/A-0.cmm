@@ -1,0 +1,8 @@
+struct A {
+    int i;
+    float j;
+}
+struct B {
+    float i;
+    int k;
+}

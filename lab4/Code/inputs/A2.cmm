@@ -1,0 +1,11 @@
+int print(int c) {
+    write(c);
+    return c + 1;
+}
+
+int main() {
+    int a[3];
+    a[0] = 1;
+    print(a[0]);
+    return 0;
+}

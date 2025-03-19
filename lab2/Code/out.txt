@@ -1,0 +1,304 @@
+Program (2)
+  ExtDefList (2)
+    ExtDef (2)
+      Specifier (2)
+        TYPE: int
+      ExtDecList (2)
+        VarDec (2)
+          ID: a
+      SEMI
+    ExtDefList (3)
+      ExtDef (3)
+        Specifier (3)
+          TYPE: int
+        ExtDecList (3)
+          VarDec (3)
+            ID: b
+          COMMA
+          ExtDecList (3)
+            VarDec (3)
+              ID: c
+            COMMA
+            ExtDecList (3)
+              VarDec (3)
+                ID: d
+        SEMI
+      ExtDefList (4)
+        ExtDef (4)
+          Specifier (4)
+            TYPE: int
+          ExtDecList (4)
+            VarDec (4)
+              VarDec (4)
+                ID: A
+              LB
+              INT: 10
+              RB
+            COMMA
+            ExtDecList (4)
+              VarDec (4)
+                VarDec (4)
+                  ID: B
+                LB
+                INT: 10
+                RB
+          SEMI
+        ExtDefList (5)
+          ExtDef (5)
+            Specifier (5)
+              TYPE: float
+            ExtDecList (5)
+              VarDec (5)
+                VarDec (5)
+                  VarDec (5)
+                    ID: F
+                  LB
+                  INT: 5
+                  RB
+                LB
+                INT: 5
+                RB
+            SEMI
+          ExtDefList (7)
+            ExtDef (7)
+              Specifier (7)
+                StructSpecifier (7)
+                  STRUCT
+                  OptTag (7)
+                    ID: S
+                  LC
+                  DefList (8)
+                    Def (8)
+                      Specifier (8)
+                        TYPE: int
+                      DecList (8)
+                        Dec (8)
+                          VarDec (8)
+                            ID: a1
+                        COMMA
+                        DecList (8)
+                          Dec (8)
+                            VarDec (8)
+                              ID: a2
+                          COMMA
+                          DecList (8)
+                            Dec (8)
+                              VarDec (8)
+                                ID: a3
+                      SEMI
+                  RC
+              SEMI
+            ExtDefList (12)
+              ExtDef (12)
+                Specifier (12)
+                  TYPE: int
+                FunDec (12)
+                  ID: main
+                  LP
+                  VarList (12)
+                    ParamDec (12)
+                      Specifier (12)
+                        TYPE: float
+                      VarDec (12)
+                        ID: fl
+                    COMMA
+                    VarList (12)
+                      ParamDec (12)
+                        Specifier (12)
+                          TYPE: float
+                        VarDec (12)
+                          VarDec (12)
+                            ID: fp
+                          LB
+                          INT: 19
+                          RB
+                  RP
+                CompSt (12)
+                  LC
+                  DefList (13)
+                    Def (13)
+                      Specifier (13)
+                        TYPE: int
+                      DecList (13)
+                        Dec (13)
+                          VarDec (13)
+                            ID: it
+                        COMMA
+                        DecList (13)
+                          Dec (13)
+                            VarDec (13)
+                              VarDec (13)
+                                VarDec (13)
+                                  ID: id
+                                LB
+                                INT: 9
+                                RB
+                              LB
+                              INT: 9
+                              RB
+                      SEMI
+                  RC
+A B F S a a1 a2 a3 b c d fl fp id it 
+main 
+CharTable: CharNode:
+name = A
+def = 1
+Type:
+	ARRAY
+	size = 10
+	Type:
+		INT
+Next: null
+
+CharNode:
+name = B
+def = 1
+Type:
+	ARRAY
+	size = 10
+	Type:
+		INT
+Next: null
+
+CharNode:
+name = F
+def = 1
+Type:
+	ARRAY
+	size = 5
+	Type:
+		ARRAY
+		size = 5
+		Type:
+			FLOAT
+Next: null
+
+CharNode:
+name = S
+def = 1
+Type:
+	STRUCT_TYPE
+	Params:
+		CharNode:
+		name = a1
+		def = 1
+		Type:
+			INT
+		Next: a2
+			CharNode:
+			name = a2
+			def = 1
+			Type:
+				INT
+			Next: a3
+				CharNode:
+				name = a3
+				def = 1
+				Type:
+					INT
+				Next: null
+
+Next: null
+
+CharNode:
+name = a
+def = 1
+Type:
+	INT
+Next: null
+
+CharNode:
+name = a1
+def = 1
+Type:
+	INT
+Next: a2
+	CharNode:
+	name = a2
+	def = 1
+	Type:
+		INT
+	Next: a3
+		CharNode:
+		name = a3
+		def = 1
+		Type:
+			INT
+		Next: null
+
+CharNode:
+name = a2
+def = 1
+Type:
+	INT
+Next: a3
+	CharNode:
+	name = a3
+	def = 1
+	Type:
+		INT
+	Next: null
+
+CharNode:
+name = a3
+def = 1
+Type:
+	INT
+Next: null
+
+CharNode:
+name = b
+def = 1
+Type:
+	INT
+Next: null
+
+CharNode:
+name = c
+def = 1
+Type:
+	INT
+Next: null
+
+CharNode:
+name = d
+def = 1
+Type:
+	INT
+Next: null
+
+CharNode:
+name = fl
+def = 0
+Type:
+	INT
+Next: null
+
+CharNode:
+name = fp
+def = 0
+Type:
+	INT
+Next: null
+
+CharNode:
+name = id
+def = 0
+Type:
+	INT
+Next: null
+
+CharNode:
+name = it
+def = 0
+Type:
+	INT
+Next: null
+
+FuncTable: name = main
+def = 0
+Type:
+	INT
+Params:
+- next ->
+
